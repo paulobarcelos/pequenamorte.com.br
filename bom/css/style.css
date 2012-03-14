@@ -1,0 +1,90 @@
+
+/*
+ * @license
+ * MyFonts Webfont Build ID 1122576, 2011-09-07T15:53:19-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Museo 300 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo/300/
+ * 
+ * Webfont: Museo 500 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo/500/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=1122576
+ * Licensed pageviews: unlimited
+ * Webfonts copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
+ * 
+ * © 2011 Bitstream Inc
+*/
+ @font-face {font-family: 'Museo-300';src: url('../webfonts/112110_0.eot');src: url('../webfonts/112110_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/112110_0.woff') format('woff'),url('../webfonts/112110_0.ttf') format('truetype'),url('../webfonts/112110_0.svg#wf') format('svg');}
+ @font-face {font-family: 'Museo-500';src: url('../webfonts/112110_1.eot');src: url('../webfonts/112110_1.eot?#iefix') format('embedded-opentype'),url('../webfonts/112110_1.woff') format('woff'),url('../webfonts/112110_1.ttf') format('truetype'),url('../webfonts/112110_1.svg#wf') format('svg');}
+
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+
+body { 
+	font-family: Museo-300;
+	font-weight: normal; 
+	font-style: normal;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+h1{
+	padding-top: 15px;
+	margin-bottom: 5px;
+}
+
+p{
+	margin: 10px 0;
+}
+
+a{
+	color: #000;
+	background-color: #fff;
+	display: inline-block;
+	padding: 5px;
+}
+
+iframe{
+	border: 4px #000 solid;
+}
+#color {
+	color: #ffcc00;
+	position:fixed;
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+	width: 100%;
+	z-index:-1;
+}
+
+#pattern {
+	background-image: url(../img/pattern.png);
+	position:fixed;
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+	width: 100%;
+	z-index:-1;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+#page-wrap {
+	width: 832px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
