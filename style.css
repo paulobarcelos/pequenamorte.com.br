@@ -6,6 +6,8 @@
 html, body {
 	height:100%;
 }	
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
 
 #color {
 	color: #ffcc00;
@@ -32,6 +34,7 @@ html, body {
 }
 
 #page-wrap {
+	position: relative;
 	width: 832px;
 	margin-left: auto;
 	margin-right: auto;
@@ -61,6 +64,20 @@ html, body {
 	width: 263px;
 	height: 54px;
 }
+#videoclipes {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+#videoclipes a{
+	background-image: url(img/videoclipes.png);
+	position: absolute;
+	right: 136px;
+	width: 125px;
+	height: 73px;
+	display: block;
+}
 #download {
 	display: block;
 	background-image: url(img/download.png);
@@ -70,7 +87,6 @@ html, body {
 	width: 196px;
 	height: 41px;
 	position: relative;
-	
 }
 #player {
 	width: 300px;
