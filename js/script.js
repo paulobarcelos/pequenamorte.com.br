@@ -22,8 +22,7 @@ $(function() {
 
 
 	$('.no-touch .inner').hide().slideDown('slow');
-
-	$('.no-touch #menu-main .menu-item a').on('click', function(e){
+	$('.no-touch a[href^="'+websiteUrl+'"]:not(.no-inner-slide), .no-touch a[href^="/"]:not(.no-inner-slide)').on('click', function(e){
 		e.preventDefault();
 		var url = $(this).attr('href');
 		$('.inner').slideUp('normal', function(){

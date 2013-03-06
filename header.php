@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/style.css">
 	<link rel="Shortcut Icon" type="image/x-icon" href="<?php bloginfo( 'template_directory' ); ?>/img/favicon.ico">
 	<script src="<?php bloginfo( 'template_directory' ); ?>/js/libs/modernizr-2.6.2.min.js"></script>
+	<script> var websiteUrl = "<?php bloginfo('url');?>"; </script>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

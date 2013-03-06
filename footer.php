@@ -7,12 +7,14 @@
 				));
 			?>
 
-			<div class="logo ir">
+			<a href="<?php bloginfo('url');?>" class="logo ir">
 				<?php if(is_home()):?>
 					<h1><?php bloginfo('name'); ?></h1>
 					<?php echo wpautop(get_bloginfo('description')); ?>
+				<?php else:?>
+					<?php bloginfo('name'); ?>
 				<?php endif;?>
-			</div>
+			</a>
 
 			<div class='push'></div>
 		</div><?php #end .outer ?>
