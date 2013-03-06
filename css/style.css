@@ -2744,6 +2744,7 @@ a {
 }
 .inner h1 {
   font-size: 1.4em;
+  line-height: 1.4em;
   text-transform: uppercase;
 }
 .main-menu-mod-three-0 .inner h1 {
@@ -2757,6 +2758,10 @@ a {
 }
 .main-menu-mod-three-3 .inner h1 {
   color: #9c4e00;
+}
+.error404 .inner h1 {
+  width: 100%;
+  text-align: center;
 }
 .inner .content {
   -webkit-column-count: 2;
@@ -2833,7 +2838,7 @@ a {
   margin-top: 8px;
   float: left;
 }
-@media (max-width: 840px) {
+@media (max-width: 920px) {
   .menu-social-container {
     float: none;
     display: block;
@@ -2875,7 +2880,7 @@ a {
     line-height: 22px;
   }
 }
-@media (max-width: 840px) {
+@media (max-width: 920px) {
   .menu-shows-container {
     float: none;
     display: block;
@@ -2885,6 +2890,7 @@ a {
 @media (max-width: 700px) {
   .menu-shows-container {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .menu-extra-container {
