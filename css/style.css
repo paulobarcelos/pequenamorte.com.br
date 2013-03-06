@@ -2566,6 +2566,10 @@ table {
   width: 0;
   height: 150%;
 }
+html,
+body {
+  height: 100%;
+}
 body {
   font-family: 'Droid Sans', sans-serif;
   color: #ffffff;
@@ -2576,18 +2580,22 @@ body {
 body.main-menu-mod-three-0,
 body.hovering.hover-mod-three-0 {
   background-image: url('../img/bg0.png');
+  background-attachment: fixed;
 }
 body.main-menu-mod-three-1,
 body.hovering.hover-mod-three-1 {
   background-image: url('../img/bg1.png');
+  background-attachment: fixed;
 }
 body.main-menu-mod-three-2,
 body.hovering.hover-mod-three-2 {
   background-image: url('../img/bg2.png');
+  background-attachment: fixed;
 }
 body.main-menu-mod-three-3,
 body.hovering.hover-mod-three-3 {
   background-image: url('../img/bg3.png');
+  background-attachment: fixed;
 }
 p {
   margin-top: 0;
@@ -2615,7 +2623,33 @@ a {
   position: relative;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -35px;
+}
+@media (max-width: 920px) {
+  .outer {
+    margin: 0 auto -108px;
+  }
+}
+@media (max-width: 700px) {
+  .outer {
+    margin: 0 auto -181px;
+  }
+}
+.push {
+  height: 50px;
+}
+@media (max-width: 920px) {
+  .push {
+    height: 108px;
+  }
+}
+@media (max-width: 700px) {
+  .push {
+    height: 181px;
+  }
 }
 .logo {
   position: relative;
@@ -2835,8 +2869,13 @@ a {
 
   *text-indent: -9999px;
   display: block;
-  margin-top: 8px;
+  margin-top: 5px;
   float: left;
+}
+@media (max-width: 920px) {
+  .menu-social-container ul .menu-item a {
+    margin-top: 8px;
+  }
 }
 @media (max-width: 920px) {
   .menu-social-container {

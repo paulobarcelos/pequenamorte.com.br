@@ -14,6 +14,7 @@
 				<?php endif;?>
 			</div>
 
+			<div class='push'></div>
 		</div><?php #end .outer ?>
 			
 

@@ -29,6 +29,7 @@
 }
 .bg-pattern(@index: 0){
 	background-image: url('../img/bg@{index}.png');
+	background-attachment:fixed;
 }
 .bg-color(@color: @grey-translucent){
 	background-color: @color;
@@ -67,6 +68,9 @@
     height: 150%;
 }
 
+html,body{
+	height: 100%;
+}
 body {
 	.font-default();
 	color: @white;
@@ -100,7 +104,25 @@ a {
 	position: relative;
 	width: 100%;
 	max-width: 960px;
-	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -35px;
+	@media (max-width: 920px){
+		margin: 0 auto -108px;
+	}
+	@media (max-width: 700px){
+		margin: 0 auto -181px;
+	}
+}
+.push {
+	height: 50px;
+	@media (max-width: 920px){
+		height: 108px;
+	}
+	@media (max-width: 700px){
+		height: 181px;
+	}
 }
 
 .logo {
@@ -293,7 +315,10 @@ a {
 			a {
 				.ir();
 				display: block;
-				margin-top: 8px;
+				margin-top: 5px;
+				@media (max-width: 920px){
+					margin-top: 8px;
+				}
 				float: left;
 			}
 
