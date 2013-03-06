@@ -6,6 +6,9 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />	
 	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/style.css">
 	<link rel="Shortcut Icon" type="image/x-icon" href="<?php bloginfo( 'template_directory' ); ?>/img/favicon.ico">
@@ -13,6 +16,6 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<article class="main">
+
 		<div class="outer">
 			<div class="inner">

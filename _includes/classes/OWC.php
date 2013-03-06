@@ -54,8 +54,9 @@ class OWC {
 	function register_menus() {
 		register_nav_menus( array(
 			'main' => 'Main',
-			'footer' => 'Footer',
-			'social' => 'Social'
+			'shows' => 'Shows',
+			'social' => 'Social',
+			'extra' => 'Extra'
 		) );
 	}
 
@@ -169,14 +170,6 @@ class OWC {
 	}
 
 	function register_sidebars() {
-		register_sidebar( array(
-			'id'			=> 'footer',
-			'name'			=> __( 'Footer', 'owc' ),
-			'before_widget'	=> '<div id="%1$s" class="widget col-4 %2$s">',
-			'after_widget'	=> '</div>',
-			'before_title'	=> '',
-			'after_title'	=> ''
-		) );
 	}
 
 	function register_widgets() {

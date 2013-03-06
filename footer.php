@@ -7,8 +7,11 @@
 				));
 			?>
 
-			<div class="logo">
-
+			<div class="logo ir">
+				<?php if(is_home()):?>
+					<h1><?php bloginfo('name'); ?></h1>
+					<?php echo wpautop(get_bloginfo('description')); ?>
+				<?php endif;?>
 			</div>
 
 		</div><?php #end .outer ?>
@@ -19,20 +22,25 @@
 				<?php
 					wp_nav_menu( array(
 						'menu' => 'social',
-						'container' => 'nav'
+						'container' => 'nav',
+						'menu_class' => 'menu icon-size-24'
 					));
-				?>
-				<?php
+				
 					wp_nav_menu( array(
 						'items_wrap' => '<ul id="%1$s" class="%2$s">'.'<li class="title">'.__('Próximos Shows:').'</li>'.'%3$s</ul>',
-						'menu' => 'footer',
+						'menu' => 'shows',
+						'container' => 'nav'
+					));
+
+					wp_nav_menu( array(
+						'menu' => 'extra',
 						'container' => 'nav'
 					));
 				?>
 			</div>
 		</footer>
 
-	</article>
+
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>

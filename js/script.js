@@ -19,4 +19,16 @@ $(function() {
 		$body.removeClass('hover-mod-four-' + (index % 4 + 1));
 		$body.removeClass('hover-mod-five-' + (index % 5 + 1));
 	});
+
+
+	$('.no-touch .inner').hide().slideDown('slow');
+
+	$('.no-touch #menu-main .menu-item a').on('click', function(e){
+		e.preventDefault();
+		var url = $(this).attr('href');
+		$('.inner').slideUp('normal', function(){
+			window.location = url;
+		});
+		
+	});
 });
