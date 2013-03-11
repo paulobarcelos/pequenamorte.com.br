@@ -1,4 +1,22 @@
+
 $(function() {
+
+	function getUrlParams () {
+		var urlParams;
+		var match,
+			pl     = /\+/g,  // Regex for replacing addition symbol with a space
+			search = /([^&=]+)=?([^&]*)/g,
+			decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+			query  = window.location.search.substring(1);
+
+		urlParams = {};
+		while (match = search.exec(query))
+			urlParams[decode(match[1])] = decode(match[2]);
+
+		return urlParams;
+	}
+
+	var urlParams = getUrlParams();
 
 	$body = $('body');
 
@@ -19,7 +37,6 @@ $(function() {
 		$body.removeClass('hover-mod-four-' + (index % 4 + 1));
 		$body.removeClass('hover-mod-five-' + (index % 5 + 1));
 	});
-
 
 	$('.no-touch .inner').hide().slideDown('slow');
 	$('.no-touch a[href^="'+websiteUrl+'"]:not(.no-inner-slide), .no-touch a[href^="/"]:not(.no-inner-slide)').on('click', function(e){
